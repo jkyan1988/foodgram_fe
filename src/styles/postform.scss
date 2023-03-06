@@ -1,0 +1,47 @@
+// div for create form
+.create-post {
+    padding-bottom: 0.85em;
+    color: black;
+}
+
+.submit-form-btn {
+    border: none;
+    background-color: transparent;
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+.submit-form-btn:hover {
+    color: white;
+}
+
+.post-title {
+
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+}
+
+.post-form {
+    padding-right: 9px;
+    margin-right: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc-form {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc-form::placeholder {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-form-container {
+    display: inline-block;
+    margin-bottom: 10px;
+}

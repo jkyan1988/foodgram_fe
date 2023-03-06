@@ -1,0 +1,51 @@
+@import "./properties.scss";
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+body {
+    background-image: url(../images/food.jpg);
+    // background-size: contain;
+    // background-repeat: repeat-y;
+    animation: animatedBackground 19s linear alternate infinite;
+
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-width: fit-content;
+    background-color: rgb(88, 98, 159);
+}
+
+main {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    main .container {
+        justify-content: center !important;
+    }
+}

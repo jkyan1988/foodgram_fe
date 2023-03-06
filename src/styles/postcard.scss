@@ -1,0 +1,196 @@
+@import './properties';
+
+
+.card {
+    border: 1px solid $border-color-grey;
+    background-color: $background-white;
+    margin-bottom: 3.5em;
+    border-radius: 3px;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75em;
+
+        .profile {
+            margin-bottom: 0;
+        }
+
+        .cardButton {
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cardImage {
+        width: 100%;
+        display: block;
+    }
+
+    .likedBy {
+        display: flex;
+        padding-left: 1em;
+
+        // span {
+        //   font-size: 0.75em;
+        //   margin-left: 0.5em;
+        //   padding-top: 0.5em;
+        // }
+    }
+
+    .comments {
+        margin-bottom: 0.75em;
+        padding-left: 2px;
+    }
+
+    .timePosted {
+        font-size: 0.6em;
+        padding-left: 2em;
+        padding-bottom: 1em;
+        color: $font-color-secondary;
+        border-bottom: 1px solid $border-color-grey-secondary;
+    }
+
+    .addComment {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85em;
+        padding: 1.5em 1.25em;
+
+        .commentText {
+            color: $font-color-secondary;
+        }
+
+        .postText {
+            color: $link-color-secondary;
+        }
+    }
+}
+
+// btn for viewcomments
+.viewcomments {
+    border: none;
+    background-color: transparent;
+    color: navy;
+    font-weight: bold;
+    padding-left: 1.5em;
+}
+
+// form for commenting
+.comment-form {
+    height: 12px;
+    width: 450px;
+    margin-left: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+
+}
+
+
+//form tag for comments
+.form-of-comment {
+    display: flex;
+}
+
+.post-btn {
+    display: block;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    //  margin-top: 14px;
+    border: none;
+    color: navy;
+    background-color: transparent;
+    font-weight: bold;
+
+}
+
+.collapse-btn {
+    border: none;
+    background-color: transparent;
+    color: navy;
+    font-weight: bold;
+    padding-left: 1.5em;
+}
+
+
+.description {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 0.87em;
+}
+
+.likes-section {
+    padding-left: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+// like and dislike buttons on postcard
+.like-btn {
+    margin-right: 1em;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+.dislike-btn {
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+// in the like component, after Likes: 
+.like-container {
+    margin-left: 10px;
+    font-size: 1.25em;
+}
+
+// img of commenter
+.user-icon-comment {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid $background-white;
+    display: block;
+    margin-bottom: 14px;
+    float: inline-start;
+}
+
+.commenter-icon-container {
+    padding-left: 17px;
+    // bottom: 0;
+    // padding-top: 10px;
+    margin-top: 15px;
+    // position: relative;
+
+}
+
+.form-of-comment {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+    .card {
+        border: none;
+        background-color: $background-grey;
+        margin-bottom: 0.75em;
+
+        .addComment {
+            display: none;
+        }
+
+        .timePosted {
+            border: none;
+        }
+    }
+}

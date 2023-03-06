@@ -1,0 +1,42 @@
+.edit-post-title {
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+}
+
+.edit-post-url {
+    padding-right: 9px;
+    margin-right: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.edit-post-desc {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.edit-submit-btn {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: none;
+    background-color: white;
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+
+}
+
+.edit-cancel-btn {
+    margin-top: 15px;
+    border: none;
+    background-color: white;
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+    cursor: pointer;
+}

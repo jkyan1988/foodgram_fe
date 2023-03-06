@@ -1,0 +1,51 @@
+@import './properties';
+
+.commentericon {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+}
+
+.commentContainer {
+    display: flex;
+    padding-left: 1.5em;
+    font-size: 0.75em;
+    margin-bottom: 0.4em;
+
+    .accountName {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: 4px;
+    }
+
+    .comment {
+        margin-left: 0.5em;
+
+    }
+}
+
+// edit trash icons in edit comment
+.edit-comment-icons {
+    margin-left: 2em;
+}
+
+.edit-comment-icons-trash {
+    margin-left: 2em;
+}
+
+// edit form in editcomment component
+.edit-comment-btn {
+    border: none;
+    background-color: white;
+    color: navy;
+    font-weight: bold;
+}
+
+.edit-comment-input {
+    height: 15px;
+    width: 200px;
+    margin-left: 60px;
+    border-radius: 20px;
+    margin-top: 22px;
+}
